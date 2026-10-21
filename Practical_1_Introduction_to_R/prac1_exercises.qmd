@@ -1,0 +1,28 @@
+---
+title: "prac1"
+author: "Ribhu"
+---
+
+```{r}
+#| label: round
+round(3.14159)
+round(3.14159, digits = 2)
+```
+```{r}
+#| label: sequence
+print(seq(27,100,10))
+```
+```{r}
+#| label: repeat
+print(rep(1213, 5))
+```
+```{r}
+my_variable <- 2189
+print(my_variable)
+print(class(my_variable))
+```
+```{r}
+boolean <- TRUE
+print(class(boolean))
+```
+
