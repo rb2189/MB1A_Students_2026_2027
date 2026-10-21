@@ -1,0 +1,27 @@
+---
+title: "ukhsa_data_analysis"
+author: "Ribhu"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+Below is the dataset for rhinovirus in the UK in 2026.
+```{r}
+disease <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+gt(head(disease))
+```
+```{r}
+disease <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+ggplot(disease, aes(
+  x = date,
+  y = metric_value
+  ))  +
+  geom_line(colour = "red") +
+  xlab("Date") +
+  ylab("Metric_value") +
+  ggtitle("Rhinovirus in the UK")
+
+
+```
+ 

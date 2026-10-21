@@ -26,3 +26,47 @@ boolean <- TRUE
 print(class(boolean))
 ```
 
+#Part 4: Vectors, data frames and plots
+
+```{r}
+install.packages("fortunes")
+```
+```{r}
+library(fortunes)
+library(tidyverse)
+library(gt)
+```
+```{r}
+my_first_vector <- c(1,5,9)
+print(my_first_vector)
+```
+```{r}
+character_vec <- c("hello", "this", "is", "a", "character", "vector")
+print(character_vec)
+```
+```{r}
+logical_vec <- c(TRUE, FALSE, TRUE)
+print(logical_vec)
+```
+```{r}
+nice_food <- c("chocolate", "sushi", "noodles")
+
+print(nice_food[1])
+```
+```{r}
+print(nice_food[2])
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+
+gt(my_data_frame)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+gt(weather)
+```
