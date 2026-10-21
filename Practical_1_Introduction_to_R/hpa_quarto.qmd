@@ -1,0 +1,20 @@
+---
+title: "brain"
+author: "Ribhu"
+---
+
+I will be calculating the total number of genes which are regionally elevated in the forebrain, and will be doing so in a pig, human and mouse.
+
+```{r}
+print(paste("In humans, in the forebrain, there are a total of", sum(180, 83, 57, 110), "genes which have a regionally elevated expression."))
+```
+
+```{r}
+print(paste("In pigs, we see", sum(109, 157, 31, 45), "genes which have regionally elevated expression."))
+```
+
+```{r}
+print(paste("Finally, in mice we see", sum(55, 185, 60, 98), "genes which have regionally elevated expression."))
+```
+
+Thus we can see that humans have the highest level of regionally elevated expression of the three organisms.
